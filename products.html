@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>STACKLY FRESH DAILY — Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <div class="site-title">STACKLY FRESH DAILY</div>
+          <div class="site-sub">Milk • Bread • Fruits • Vegetables</div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="cart.html" class="nav-link cart-link">Cart <span id="cart-count" class="cart-count">0</span></a>
+      <a href="login.html" class="nav-link cart-link">Login</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
+
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="products-hero">
+      <h1>All Products</h1>
+      <p class="muted">Browse our milk, bakery, fruits and vegetables. Click <strong>Add</strong> to save items to your cart.</p>
+    </section>
+
+    <section class="search-filter-area">
+      <div class="search-bar-wrapper">
+        <input type="text" id="product-search" placeholder="Search for Milk, Bread, Apples..." onkeyup="filterProducts()">
+        <button class="search-btn" onclick="filterProducts()">🔍</button>
+      </div>
+      <div class="filter-options">
+        <button class="btn outline filter-btn active" onclick="filterProducts('All')">All</button>
+        <button class="btn outline filter-btn" onclick="filterProducts('Milk')">Milk</button>
+        <button class="btn outline filter-btn" onclick="filterProducts('Bread')">Bread</button>
+        <button class="btn outline filter-btn" onclick="filterProducts('Fruits')">Fruits</button>
+        <button class="btn outline filter-btn" onclick="filterProducts('Vegetables')">Vegetables</button>
+      </div>
+    </section>
+
+    <section id="products-grid" class="card-grid">
+      <div class="card" data-category="Milk" data-name="Farm Fresh Milk">
+          <div class="product-image">🥛</div>
+          <h4>Farm Fresh Milk (500ml)</h4>
+          <p class="muted">Locally Sourced</p>
+          <div class="flex-row justify-between align-center">
+              <span class="price">₹35</span>
+              <button class="btn primary">Add</button>
+          </div>
+      </div>
+      
+      <div class="card" data-category="Bread" data-name="Whole Wheat Loaf">
+          <div class="product-image">🍞</div>
+          <h4>Whole Wheat Loaf</h4>
+          <p class="muted">Freshly Baked</p>
+          <div class="flex-row justify-between align-center">
+              <span class="price">₹45</span>
+              <button class="btn primary">Add</button>
+          </div>
+      </div>
+      
+      <div class="card" data-category="Vegetables" data-name="Organic Carrots">
+          <div class="product-image">🥕</div>
+          <h4>Organic Carrots (500g)</h4>
+          <p class="muted">Freshly harvested</p>
+          <div class="flex-row justify-between align-center">
+              <span class="price">₹40</span>
+              <button class="btn primary">Add</button>
+          </div>
+      </div>
+      
+      <div class="card" data-category="Fruits" data-name="Organic Apples">
+          <div class="product-image">🍎</div>
+          <h4>Organic Apples (1 Kg)</h4>
+          <p class="muted">Seasonal Fruit</p>
+          <div class="flex-row justify-between align-center">
+              <span class="price">₹120</span>
+              <button class="btn primary">Add</button>
+          </div>
+      </div>
+      
+      <div class="card" data-category="Vegetables" data-name="Fresh Spinach Bundle">
+          <div class="product-image">🥬</div>
+          <h4>Fresh Spinach Bundle</h4>
+          <p class="muted">Local Greens</p>
+          <div class="flex-row justify-between align-center">
+              <span class="price">₹25</span>
+              <button class="btn primary">Add</button>
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© STACKLY FRESH DAILY • Email: <a href="mailto:suryakumar@thestackly.gmail.com">suryakumar@thestackly.gmail.com</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

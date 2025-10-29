@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>STACKLY FRESH DAILY — Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <div class="site-title">STACKLY FRESH DAILY</div>
+          <div class="site-sub">Milk • Bread • Fruits • Vegetables</div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" id="contact-link">Contact</a>
+        <a href="cart.html" class="nav-link active cart-link">Cart <span id="cart-count" class="cart-count">0</span></a>
+      <a href="login.html" class="nav-link cart-link">Login</a>
+
+        <!-- <a href="login.html" class="nav-link cart-link">login -->
+      </nav>
+<!-- Theme Toggle Button -->
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌙</button>
+      
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Your Cart</h1>
+      <div id="cart-area" class="cart-area"></div>
+
+      <div class="cart-actions" style="margin-top:14px;">
+        <a href="checkout.html" class="btn primary">Proceed to Checkout</a>
+        <button id="clear-cart" class="btn outline">Clear Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© STACKLY FRESH DAILY</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
